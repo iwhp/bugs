@@ -1,0 +1,12 @@
+{
+  "name": "typescript-bug-declaration-file-with-angular",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.5.16",
+    "typescript": "^2.0.3"
+  }
+}
