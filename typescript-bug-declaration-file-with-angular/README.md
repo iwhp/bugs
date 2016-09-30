@@ -36,11 +36,12 @@ tsconfig.json
 
     {
       "compilerOptions": {
+        "target": "es5",
+        "outFile": "js/",
         "noImplicitAny": false,
         "noEmitOnError": true,
         "removeComments": false,
-        "sourceMap": true,
-        "target": "es5",
+        "sourceMap": false,
         "declaration": true
       },
       "exclude": [
