@@ -12,9 +12,21 @@ Sample **Code**:
 
 MyClass.ts
 
+    /// <reference path="node_modules/@types/angular/index.d.ts" />
     module MyModule {
         export class MyClass implements angular.IServiceProvider {
             constructor() {
+            }
+            $get;
+        }
+    }
+
+MyClass2.ts
+
+    /// <reference path="node_modules/@types/angular/index.d.ts" />
+    module MyModule {
+        export class MyClassB implements angular.IServiceProvider {
+            constructor(myClass: MyModule.MyClass) {
             }
             $get;
         }
@@ -39,33 +51,6 @@ tsconfig.json
 **Expected behavior:**
 
 A .d.ts file should be created.
-
-**Addition to the sample above**
-
-Changes to MyClass.ts
-
-    import * as angular from 'angular';
-    export module MyModule {
-        export class MyClass implements angular.IServiceProvider {
-            constructor() {
-            }
-            $get;
-        }
-    }
-
-MyClass2.ts
-
-    export module MyModule {
-        export class MyClassB implements angular.IServiceProvider {
-            constructor(myClass: MyModule.MyClass) {
-            }
-            $get;
-        }
-    }
-
-Getting the following Compiler error: 
-
-`error TS2305: Module '"MyClassB".MyModule' has no exported member 'MyClass'.`
 
 **Links:**
 
