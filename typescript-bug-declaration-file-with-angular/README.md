@@ -40,8 +40,6 @@ tsconfig.json
 }
 ```
 
-There is a github repo on <https://github.com/iwhp/bugs/typescript-bug-declaration-file-with-angular>
-
 **Expected behavior:**
 
 A .d.ts file should be created.
