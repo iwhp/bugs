@@ -1,6 +1,6 @@
-﻿import * as angular from 'angular';
+﻿/// <reference path="node_modules/@types/angular/index.d.ts" />
 
-export module MyModule {
+module MyModule {
     export class MyClass implements angular.IServiceProvider {
         constructor() {
         }
