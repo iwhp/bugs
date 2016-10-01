@@ -37,7 +37,7 @@ tsconfig.json
     {
       "compilerOptions": {
         "target": "es5",
-        "outFile": "js/",
+        "outFile": "js/app.js",
         "noImplicitAny": false,
         "noEmitOnError": true,
         "removeComments": false,
@@ -56,6 +56,7 @@ A .d.ts file should be created.
 **What I learned**
 
 - It seems that we should no longer use `/// <reference.../> ` in such situations. Instead we use the more modern `import ...` statement.
+- Use `module:adm` and `moduleResolution:node`
 - I also learned that for building a `module` structure for my classes, I keep each class in a separate file and export that class, without the `module` or `namespace` statement.
   I then create a new file where I export all the classes by using `export { MyClass } from './MyClass';`.
   So I get a module which can then import into other files.
