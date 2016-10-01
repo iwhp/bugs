@@ -70,6 +70,8 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="MyApp.ts" />
+    <TypeScriptCompile Include="MyModule.ts" />
     <TypeScriptCompile Include="MyClass.ts" />
     <TypeScriptCompile Include="MyClassB.ts" />
   </ItemGroup>

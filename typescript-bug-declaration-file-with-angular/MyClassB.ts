@@ -1,10 +1,9 @@
-/// <reference path="node_modules/@types/angular/index.d.ts" />
+import * as angular from 'angular';
+import * as MyModule from './MyModule';
 
-module MyModule {
-    export class MyClassB implements angular.IServiceProvider {
-        constructor(myClass: MyModule.MyClass) {
-        }
-
-        $get;
+export class MyClassB implements angular.IServiceProvider {
+    constructor(myClass: MyModule.MyClass) {
     }
+
+    $get;
 }

@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "es5",
     "outFile": "js/app.js",
+    "module": "amd",
+    "moduleResolution": "node",
     "noImplicitAny": false,
     "noEmitOnError": true,
     "removeComments": false,
@@ -9,6 +11,7 @@
     "declaration": true
   },
   "exclude": [
+    "js",
     "node_modules"
   ]
 }

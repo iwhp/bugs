@@ -53,6 +53,19 @@ tsconfig.json
 
 A .d.ts file should be created.
 
+**What I learned**
+
+- It seems that we should no longer use `/// <reference.../> ` in such situations. Instead we use the more modern `import ...` statement.
+- I also learned that for building a `module` structure for my classes, I keep each class in a separate file and export that class, without the `module` or `namespace` statement.
+  I then create a new file where I export all the classes by using `export { MyClass } from './MyClass';`.
+  So I get a module which can then import into other files.
+- It seems there are some drawbacks, please read the Stackoverflow thread below for more information.
+
 **Links:**
 
 Stackoverflow: <http://stackoverflow.com/questions/39792617/generating-a-d-ts-file-with-the-compiler-option-generates-a-error-for-angular>
+
+Related:
+- http://typescript.codeplex.com/wikipage?title=Modules%20in%20TypeScript&referringTitle=TypeScript%20Documentation
+- http://stackoverflow.com/questions/21706455/how-do-i-split-my-module-across-multiple-files-in-typescript-with-node-js/37480976#37480976
+ 
